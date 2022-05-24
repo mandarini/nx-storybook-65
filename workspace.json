@@ -5,10 +5,14 @@
     "ngone": "apps/ngone",
     "ngone-e2e": "apps/ngone-e2e",
     "ngthree": "libs/ngthree",
+    "ngthree-e2e": "apps/ngthree-e2e",
     "ngtwo": "libs/ngtwo",
+    "ngtwo-e2e": "apps/ngtwo-e2e",
     "reone": "apps/reone",
     "reone-e2e": "apps/reone-e2e",
     "rethree": "libs/rethree",
-    "retwo": "libs/retwo"
+    "rethree-e2e": "apps/rethree-e2e",
+    "retwo": "libs/retwo",
+    "retwo-e2e": "apps/retwo-e2e"
   }
 }
