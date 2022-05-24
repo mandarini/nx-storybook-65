@@ -1,0 +1,38 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ngthree/src",
+  "prefix": "katrina",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/ngthree"],
+      "options": {
+        "project": "libs/ngthree/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngthree/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngthree/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ngthree"],
+      "options": {
+        "jestConfig": "libs/ngthree/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/ngthree/**/*.ts", "libs/ngthree/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

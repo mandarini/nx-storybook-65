@@ -1,5 +1,14 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "ngone": "apps/ngone",
+    "ngone-e2e": "apps/ngone-e2e",
+    "ngthree": "libs/ngthree",
+    "ngtwo": "libs/ngtwo",
+    "reone": "apps/reone",
+    "reone-e2e": "apps/reone-e2e",
+    "rethree": "libs/rethree",
+    "retwo": "libs/retwo"
+  }
 }
