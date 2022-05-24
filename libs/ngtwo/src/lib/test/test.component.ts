@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'katrina-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'katrina-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.css'],
 })
-export class AppComponent {
+export class TestComponent {
   @Input() title: string;
   @Input() rating: number;
   @Input() flag: boolean;

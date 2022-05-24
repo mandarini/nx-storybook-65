@@ -1,12 +1,16 @@
-import styles from './rethree.module.css';
-
-/* eslint-disable-next-line */
-export interface RethreeProps {}
+export interface RethreeProps {
+  title: string;
+  rating: number;
+  flag: boolean;
+}
 
 export function Rethree(props: RethreeProps) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Rethree!</h1>
+    <div>
+      <h1>React app using Nx</h1>
+      <p>Title: {props.title}</p>
+      <p>Rating: {props.rating}</p>
+      <p>Flag: {props.flag ? 'true' : 'false'}</p>
     </div>
   );
 }
