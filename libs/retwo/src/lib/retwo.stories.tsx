@@ -9,8 +9,3 @@ export default {
 const Template: Story<RetwoProps> = (args) => <Retwo {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {
-  title: '',
-  rating: 0,
-  flag: false,
-};

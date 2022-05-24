@@ -7,18 +7,19 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [],
-    })
+    }),
   ],
 } as Meta<AppComponent>;
-
+const argTypes = {
+  title: { control: 'text' },
+  rating: { control: 'number' },
+  flag: { defaultValue: false, control: { type: 'boolean' } },
+};
 const Template: Story<AppComponent> = (args: AppComponent) => ({
   props: args,
 });
 
-
 export const Primary = Template.bind({});
-Primary.args = {
-    title:  '',
-    rating:  0,
-    flag:  false,
-}
+Primary.argTypes = {
+  ...argTypes,
+};
